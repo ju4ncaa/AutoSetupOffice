@@ -28,10 +28,10 @@ def banner():
 
 banner()
 
-# Crear carpeta Office2024 en Documents
+# Crear carpeta Office en Documents
 user_documents = os.path.join(os.environ["USERPROFILE"], "Documents")
 
-office_folder = os.path.join(user_documents, "Office24")
+office_folder = os.path.join(user_documents, "Office")
 
 if not os.path.exists(office_folder):
     print(f"\n{Colors.YELLOW}[+]{Colors.RESET} Creando el directorio para la instalación\n"); sleep(2)
