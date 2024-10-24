@@ -1,4 +1,4 @@
-# AutoSetupOffice2024
+# AutoSetupOffice
 
 Script que automatiza la instalación del siguiente artículo de [Microsoft Office](https://learn.microsoft.com/es-es/office/ltsc/2021/deploy)
 
