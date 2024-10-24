@@ -1,6 +1,6 @@
 # AutoSetupOffice2024
 
-Script que automatiza la instalación de [Microsoft Office 2021 LTSC](https://learn.microsoft.com/es-es/office/ltsc/2021/deploy)
+Script que automatiza la instalación del siguiente artículo de [Microsoft Office](https://learn.microsoft.com/es-es/office/ltsc/2021/deploy)
 
 ## Requisitos
 - Python 3.x
