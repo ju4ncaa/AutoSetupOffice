@@ -5,6 +5,10 @@ Script que automatiza la instalación de [Microsoft Office 2021 LTSC](https://le
 ## Requisitos
 - Python 3.x
 - Módulo `subprocess` (incluido en la biblioteca estándar de Python)
+  
+   ```bash
+   pip install subprocess.run
+   ```
 - Acceso a Windows con permisos de administrador
 
 ## Instalación
