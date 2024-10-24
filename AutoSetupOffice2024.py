@@ -46,23 +46,22 @@ for file_name in files_to_copy:
         sys.exit(1)
 
 # Instalación Office
-def install (command, folder):
+def install(command, folder):
     cmd = f'cmd.exe /K "cd /d {folder} && {command}"'
 
     # Verificar si el script ya está siendo ejecutado como administrador
     if os.name == 'nt':
         try:
-            # Ejecutar el comando como administrador
-            subprocess.run(["powershell", "Start-Process", "powershell", "-Verb", "runAs", "-ArgumentList", f'& {{ {cmd} }}'])
+            # Ejecutar el comando como administrador en PowerShell, usando comillas dobles para evitar errores de &
+            subprocess.run(["powershell", "Start-Process", "cmd.exe", "-ArgumentList", f'/K "cd /d {folder} && {command}"', "-Verb", "runAs"])
         except Exception as e:
             print(f"\n{Colors.RED}[!]{Colors.RESET} Error al ejecutar el comando como administrador: {e}")
-            print (f"{Colors.RED}[!]{Colors.RESET} Saliendo...\n")
+            print(f"{Colors.RED}[!]{Colors.RESET} Saliendo...\n")
             sys.exit(1)
     else:
         print(f"\n{Colors.YELLOW}[!]{Colors.RESET} Este script solo funciona en Windows.")
-        print (f"{Colors.RED}[!]{Colors.RESET} Saliendo...\n")
+        print(f"{Colors.RED}[!]{Colors.RESET} Saliendo...\n")
         sys.exit(0)
-
 
 command = 'setup /configure configuration.xml'
 folder = office_folder 
