@@ -11,4 +11,3 @@ Script que automatiza la instalación del siguiente artículo de [Microsoft Offi
    git clone https://github.com/tu_usuario/office-installer-automation.git
    cd office-installer-automation
    ```
-## Ejemplo de uso
