@@ -3,12 +3,7 @@
 Script que automatiza la instalación del siguiente artículo de [Microsoft Office](https://learn.microsoft.com/es-es/office/ltsc/2021/deploy)
 
 ## Requisitos
-- Python 3.x
-- Módulo `pywinauto`
-  
-   ```bash
-   pip install pywinauto
-   ```
+- Python 3.X
 - Acceso a terminal windows con permisos de administrador
 
 ## Instalación
