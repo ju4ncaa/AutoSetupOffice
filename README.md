@@ -4,15 +4,16 @@ Script que automatiza la instalación del siguiente artículo de [Microsoft Offi
 
 ## Requisitos
 - Python 3.x
-- Módulo `subprocess` (incluido en la biblioteca estándar de Python)
+- Módulo `pywinauto`
   
    ```bash
-   pip install subprocess.run
+   pip install pywinauto
    ```
-- Acceso a Windows con permisos de administrador
+- Acceso a terminal windows con permisos de administrador
 
 ## Instalación
    ```bash
    git clone https://github.com/tu_usuario/office-installer-automation.git
    cd office-installer-automation
    ```
+# Ejemplo de uso
